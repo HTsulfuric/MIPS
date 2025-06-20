@@ -31,8 +31,6 @@ main:
 	lw   $t2, 0($s3) # arrayA[i - j]を$t2にロード
 	sw   $t2, 32($s1) # arrayB[0]に$t2をストア
 	nop #ここまで
-
-end:
 	lw $a0, 32($s1) # arrayB[0]の値を$a0にロード
 	li   $v0, 1 # arrayB[0]を表示するためのシステムコール
 	syscall
